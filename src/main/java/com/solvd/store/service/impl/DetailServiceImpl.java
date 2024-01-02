@@ -6,7 +6,7 @@ import com.solvd.store.service.DetailService;
 
 public class DetailServiceImpl implements DetailService {
 
-    DetailRepository detailRepository;
+    private final DetailRepository detailRepository;
 
     public DetailServiceImpl() {
         this.detailRepository = new DetailRepositoryImpl();

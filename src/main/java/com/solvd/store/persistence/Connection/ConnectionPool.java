@@ -55,7 +55,6 @@ public class ConnectionPool {
 
             return DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
-            // Handle exceptions appropriately
             throw new RuntimeException("Error creating connection", e);
         }
     }
